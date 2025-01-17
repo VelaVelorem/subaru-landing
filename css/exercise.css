@@ -1,0 +1,90 @@
+/* HEX COLOR CODES */
+/* #2596be */
+/* #1b3254 */
+/* #0d3146 */
+/* #3e5d73 */
+/* #768795 */
+/* #958a7a */
+/* #e0d1b9 */
+/* #fff8f3*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+ol, ul, li {
+    list-style: none;
+}
+/* OVERALL HEADER */
+#hero-img {
+    background-image: url('/images/crosstrek6.jpg');
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #0d3146;
+    align-items: center;
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
+/* NAV SECTION*/
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    background: #ffffff55;
+    backdrop-filter: blur(10px);
+    padding: 1em 3em;
+
+}
+.nav-links li a {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: grey;
+    text-decoration: none;
+}
+/* END OF NAV SECTION */
+
+#car-specs {
+    background: #ffffff55;
+    backdrop-filter: blur(10px);
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+.specs-header {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+.specs-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* END OF HEADER */
