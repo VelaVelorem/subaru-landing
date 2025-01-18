@@ -42,7 +42,8 @@ h1 {
 }
 @media (max-width: 844px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 2.5vw;
+        font-weight: bold;
     }
 }
 /* NAV SECTION*/
@@ -56,15 +57,30 @@ h1 {
     padding: 1em 3em;
 }
 @media (max-width: 452px) {
-    nav {
-        display: block;
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-links li {
+        background-color: none;
+        padding: 0.5em 1em;
+
+    }
+    .nav-links li:hover {
+        background-color: none;
+        border-bottom: 1px solid #081325;
+    }
+    .search-btn {
+        font-size: 3vw;
     }
 }
 .nav-links li a {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color: rgb(104, 102, 102);
+    color: #686666;
     text-decoration: none;
 }
 .nav-links li a:hover {
@@ -111,6 +127,7 @@ h1 {
 .specs-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .specs-box i {
     font-size: 0.8em;
@@ -139,13 +156,13 @@ h1 {
 }
 
 .section-details {
+    padding: 4em;
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    height: 100%;
+    flex-direction: column;
+    text-wrap: wrap;
 }
 .section-header {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 0.5em;
     text-transform: uppercase;
